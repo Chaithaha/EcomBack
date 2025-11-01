@@ -1,0 +1,23 @@
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+Environment Variables Loaded:
+SUPABASE_URL: https://ckoybdoellolyxqjkoil.supabase.co
+SUPABASE_KEY: ***SET***
+PORT: 5000
+CLIENT_URL: http://localhost:3000
+C:\Users\chait\Desktop\EComSubmission\server\routes\auth.js:80
+    const { error: profileError } = await supabaseService
+                   ^
+
+SyntaxError: Identifier 'profileError' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1472:18)
+    at Module._compile (node:internal/modules/cjs/loader:1501:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\chait\Desktop\EComSubmission\server\index.js:91:20)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+
+Node.js v20.19.3

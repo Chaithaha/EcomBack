@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Authentication Token Verification Test",
+    "file": "test1-authentication-token.js",
+    "description": "Tests authentication token verification, token format validation, and server-side token processing",
+    "duration": 3529,
+    "passed": false,
+    "error": "Command failed: npx jest test1-authentication-token.js --verbose --testTimeout=30000\n",
+    "stdout": "No tests found, exiting with code 1\nRun with `--passWithNoTests` to exit with code 0\nIn /home/chait/Desktop/New folder (10)/server\n  36 files checked.\n  testMatch: **/__tests__/**/*.?([mc])[jt]s?(x), **/?(*.)+(spec|test).?([mc])[jt]s?(x) - 0 matches\n  testPathIgnorePatterns: /node_modules/ - 36 matches\n  testRegex:  - 0 matches\nPattern: test1-authentication-token.js - 0 matches\n",
+    "stderr": "",
+    "timestamp": "2025-10-20T20:08:08.838Z"
+  },
+  {
+    "name": "CORS Configuration Test",
+    "file": "test2-cors-configuration.js",
+    "description": "Tests server CORS configuration with different origins, preflight requests, and header handling",
+    "duration": 2245,
+    "passed": false,
+    "error": "Command failed: npx jest test2-cors-configuration.js --verbose --testTimeout=30000\n",
+    "stdout": "No tests found, exiting with code 1\nRun with `--passWithNoTests` to exit with code 0\nIn /home/chait/Desktop/New folder (10)/server\n  36 files checked.\n  testMatch: **/__tests__/**/*.?([mc])[jt]s?(x), **/?(*.)+(spec|test).?([mc])[jt]s?(x) - 0 matches\n  testPathIgnorePatterns: /node_modules/ - 36 matches\n  testRegex:  - 0 matches\nPattern: test2-cors-configuration.js - 0 matches\n",
+    "stderr": "",
+    "timestamp": "2025-10-20T20:08:11.084Z"
+  },
+  {
+    "name": "Environment Variable Validation Test",
+    "file": "test3-environment-variables.js",
+    "description": "Compares client and server environment variables, validates Supabase configuration, and checks for consistency",
+    "duration": 4236,
+    "passed": false,
+    "error": "Command failed: npx jest test3-environment-variables.js --verbose --testTimeout=30000\n",
+    "stdout": "No tests found, exiting with code 1\nRun with `--passWithNoTests` to exit with code 0\nIn /home/chait/Desktop/New folder (10)/server\n  36 files checked.\n  testMatch: **/__tests__/**/*.?([mc])[jt]s?(x), **/?(*.)+(spec|test).?([mc])[jt]s?(x) - 0 matches\n  testPathIgnorePatterns: /node_modules/ - 36 matches\n  testRegex:  - 0 matches\nPattern: test3-environment-variables.js - 0 matches\n",
+    "stderr": "",
+    "timestamp": "2025-10-20T20:08:15.321Z"
+  },
+  {
+    "name": "API Endpoint Test",
+    "file": "test4-api-endpoint.js",
+    "description": "Tests the /api/posts endpoint directly with curl, with and without authentication tokens, and checks error responses",
+    "duration": 1638,
+    "passed": false,
+    "error": "Command failed: npx jest test4-api-endpoint.js --verbose --testTimeout=30000\n",
+    "stdout": "No tests found, exiting with code 1\nRun with `--passWithNoTests` to exit with code 0\nIn /home/chait/Desktop/New folder (10)/server\n  36 files checked.\n  testMatch: **/__tests__/**/*.?([mc])[jt]s?(x), **/?(*.)+(spec|test).?([mc])[jt]s?(x) - 0 matches\n  testPathIgnorePatterns: /node_modules/ - 36 matches\n  testRegex:  - 0 matches\nPattern: test4-api-endpoint.js - 0 matches\n",
+    "stderr": "",
+    "timestamp": "2025-10-20T20:08:16.959Z"
+  },
+  {
+    "name": "Server Logging Test",
+    "file": "test5-server-logging.js",
+    "description": "Adds enhanced logging to track requests, logs exact errors when 400 occurs, and includes request headers and body in logs",
+    "duration": 1769,
+    "passed": false,
+    "error": "Command failed: npx jest test5-server-logging.js --verbose --testTimeout=30000\n",
+    "stdout": "No tests found, exiting with code 1\nRun with `--passWithNoTests` to exit with code 0\nIn /home/chait/Desktop/New folder (10)/server\n  36 files checked.\n  testMatch: **/__tests__/**/*.?([mc])[jt]s?(x), **/?(*.)+(spec|test).?([mc])[jt]s?(x) - 0 matches\n  testPathIgnorePatterns: /node_modules/ - 36 matches\n  testRegex:  - 0 matches\nPattern: test5-server-logging.js - 0 matches\n",
+    "stderr": "",
+    "timestamp": "2025-10-20T20:08:18.728Z"
+  }
+]

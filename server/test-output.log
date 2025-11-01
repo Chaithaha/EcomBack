@@ -1,0 +1,16 @@
+Testing unified item creation with image upload...
+Sending test data: {
+  title: 'Test Item with Image',
+  description: 'This is a test item to verify the unified image upload system works',
+  price: 99.99,
+  category: 'Electronics',
+  images: [
+    {
+      base64: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEA...',
+      originalname: 'test-image.png',
+      mimetype: 'image/png'
+    }
+  ]
+}
+Using auth token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyZ...
+❌ ERROR: Test failed fetch failed
