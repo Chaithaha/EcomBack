@@ -53,7 +53,7 @@ const createItem = async (req, res) => {
                 price: parseFloat(price),
                 category,
                 user_id: userId,
-                status: itemStatus,
+                // status: itemStatus, // Column does not exist
                 battery_health: battery_health ? parseInt(battery_health) : null,
                 market_value: market_value ? parseFloat(market_value) : null,
                 created_at: new Date().toISOString()
