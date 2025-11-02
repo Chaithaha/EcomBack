@@ -1,6 +1,4 @@
 
-console.log('Serverless function starting...');
-
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -28,7 +26,7 @@ app.get('/test', (req, res) => {
 
 // Ensure uploads directory exists
 // Use /tmp for serverless environments (Vercel), otherwise use project directory
-const uploadsDir = process.env.VERCEL 
+const uploadsDir = process.env.VERCEL === '1' || process.env.VERCEL === 'true'
   ? path.join('/tmp', 'uploads')
   : path.join(__dirname, 'uploads');
 
