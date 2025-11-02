@@ -4,3 +4,6 @@ ecom-back-git-main-c…el.app//api/items:1
 HomePage.js:68 Fetch error: TypeError: Failed to fetch
     at e (HomePage.js:47:32)
     at HomePage.js:75:5
+
+
+(index):1  GET https://ecom-back-virid.vercel.app/ 404 (Not Found)
