@@ -83,6 +83,8 @@ app.use(helmet({
   }
 }));
 
+app.options('*', cors()); // Enable preflight for all routes
+
 app.use(cors({
   origin: process.env.CLIENT_URL || 'https://e-com-front-chi.vercel.app',
   credentials: true

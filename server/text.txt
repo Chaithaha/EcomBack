@@ -1,37 +1,6 @@
-2025-11-02 01:40:58.381 [error] Serverless function starting...
-[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
-Environment Variables Loaded:
-SUPABASE_URL: https://ckoybdoellolyxqjkoil.supabase.co
-SUPABASE_KEY: ***SET***
-PORT: undefined
-CLIENT_URL: https://e-com-front-chi.vercel.app/
-Serverless function starting...
-[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
-Environment Variables Loaded:
-SUPABASE_URL: https://ckoybdoellolyxqjkoil.supabase.co
-SUPABASE_KEY: ***SET***
-PORT: undefined
-CLIENT_URL: https://e-com-front-chi.vercel.app/
-Error: ENOENT: no such file or directory, mkdir '/var/task/server/uploads'
-    at Object.mkdirSync (node:fs:1363:26)
-    at Object.<anonymous> (/var/task/server/routes/test-images.js:11:8)
-    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
-    at A.l._compile (/opt/rust/bytecode.js:2:3182)
-    at Object..js (node:internal/modules/cjs/loader:1820:10)
-    at Module.load (node:internal/modules/cjs/loader:1423:32)
-    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
-    at /opt/rust/nodejs.js:2:13528
-    at Function.Gr (/opt/rust/nodejs.js:2:13906)
-    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498) {
-  errno: -2,
-  code: 'ENOENT',
-  syscall: 'mkdir',
-  path: '/var/task/server/uploads'
-}
-Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
-
-on browser console - 
-
-ecom-back-virid.vercel.app/:1  GET https://ecom-back-virid.vercel.app/ 500 (Internal Server Error)
-
-
+Access to fetch at 'https://ecom-back-git-main-chaithahas-projects.vercel.app//api/items' from origin 'https://e-com-front-chi.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: Redirect is not allowed for a preflight request.
+ecom-back-git-main-c…el.app//api/items:1 
+ Failed to load resource: net::ERR_FAILED
+HomePage.js:68 Fetch error: TypeError: Failed to fetch
+    at e (HomePage.js:47:32)
+    at HomePage.js:75:5
