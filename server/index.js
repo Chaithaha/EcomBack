@@ -75,7 +75,7 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      connectSrc: ["'self'", "http://localhost:3000", "https:"],
+      connectSrc: ["'self'", "https://e-com-front-chi.vercel.app", "https:"],
       imgSrc: ["'self'", "data:", "https:"],
       scriptSrc: ["'self'", "'unsafe-eval'"],
       styleSrc: ["'self'", "'unsafe-inline'"]
@@ -84,7 +84,7 @@ app.use(helmet({
 }));
 
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: process.env.CLIENT_URL || 'https://e-com-front-chi.vercel.app',
   credentials: true
 }));
 app.use(morgan('combined'));

@@ -70,7 +70,7 @@
       "corsHeaders": {
         "status": "✅ PASSED",
         "details": "CORS properly configured for client-server communication",
-        "allowedOrigin": "http://localhost:3000",
+        "allowedOrigin": "https://e-com-front-chi.vercel.app",
         "allowedMethods": "GET,HEAD,PUT,PATCH,POST,DELETE",
         "allowedHeaders": "authorization"
       },

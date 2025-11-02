@@ -3,7 +3,7 @@ Environment Variables Loaded:
 SUPABASE_URL: https://ckoybdoellolyxqjkoil.supabase.co
 SUPABASE_KEY: ***SET***
 PORT: 5000
-CLIENT_URL: http://localhost:3000
+CLIENT_URL: https://e-com-front-chi.vercel.app
 C:\Users\chait\Desktop\EComSubmission\server\routes\auth.js:80
     const { error: profileError } = await supabaseService
                    ^
