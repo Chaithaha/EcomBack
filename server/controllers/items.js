@@ -258,9 +258,6 @@ const getItems = async (req, res) => {
         // Apply filters if provided
 if (status) {
             query = query.eq('status', status);
-        } else {
-            // By default, show both active and pending items for public view
-            query = query.in('status', ['active', 'pending']);
         }
         
         if (category) {
