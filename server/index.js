@@ -24,6 +24,11 @@ app.get('/test', (req, res) => {
   res.json({ success: true, message: 'Test endpoint working' });
 });
 
+// Root route - provides a welcome message
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to the E-Commerce API! Visit /api for available endpoints.' });
+});
+
 // Ensure uploads directory exists
 // Use /tmp for serverless environments (Vercel), otherwise use project directory
 const uploadsDir = process.env.VERCEL === '1' || process.env.VERCEL === 'true'
