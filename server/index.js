@@ -1,4 +1,6 @@
 
+console.log('Serverless function starting...');
+
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
