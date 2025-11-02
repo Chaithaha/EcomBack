@@ -29,3 +29,9 @@ Error: ENOENT: no such file or directory, mkdir '/var/task/server/uploads'
   path: '/var/task/server/uploads'
 }
 Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+
+on browser console - 
+
+ecom-back-virid.vercel.app/:1  GET https://ecom-back-virid.vercel.app/ 500 (Internal Server Error)
+
+
