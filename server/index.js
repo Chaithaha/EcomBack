@@ -88,12 +88,19 @@ app.use(helmet({
   }
 }));
 
-app.options('*', cors()); // Enable preflight for all routes
-
-app.use(cors({
+// Define centralized CORS options
+const corsOptions = {
   origin: process.env.CLIENT_URL || 'https://e-com-front-chi.vercel.app',
-  credentials: true
-}));
+  credentials: true,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  allowedHeaders: 'Content-Type,Authorization'
+};
+
+// Enable preflight requests for all routes using the detailed options
+app.options('*', cors(corsOptions));
+
+// Then, use the same CORS middleware for all actual API requests
+app.use(cors(corsOptions));
 app.use(morgan('combined'));
 app.use(express.json({ limit: '50mb' }));
 app.use('/uploads', express.static('uploads'));

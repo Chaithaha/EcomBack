@@ -1,9 +1,119 @@
-Access to fetch at 'https://ecom-back-git-main-chaithahas-projects.vercel.app//api/items' from origin 'https://e-com-front-chi.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: Redirect is not allowed for a preflight request.
-ecom-back-git-main-c…el.app//api/items:1 
- Failed to load resource: net::ERR_FAILED
+ User signed in: admin@example.com
+ Fetching products from: https://ecom-back-git-main-chaithahas-projects.vercel.app/api/items
+ Initial session found for user: admin@example.com
+home:1 Access to fetch at 'https://ecom-back-git-main-chaithahas-projects.vercel.app/api/items' from origin 'https://e-com-front-chi.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+ecom-back-git-main-chaithahas-projects.vercel.app/api/items:1  Failed to load resource: net::ERR_FAILED
+ Fetch error: 
+e @ main.de802767.js:2
+home:1 Uncaught (in promise) 
+home:1 Uncaught (in promise) 
+home:1 Uncaught (in promise) 
+home:1 Uncaught (in promise) 
+ User signed in: admin@example.com
+ Fetching products from: https://ecom-back-git-main-chaithahas-projects.vercel.app/api/items
+home:1 Access to fetch at 'https://ecom-back-git-main-chaithahas-projects.vercel.app/api/items' from origin 'https://e-com-front-chi.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+ecom-back-git-main-chaithahas-projects.vercel.app/api/items:1  Failed to load resource: net::ERR_FAILED
 HomePage.js:68 Fetch error: TypeError: Failed to fetch
     at e (HomePage.js:47:32)
-    at HomePage.js:75:5
+    at t (HomePage.js:79:7)
+e @ HomePage.js:68
+HomePage.js:45 Fetching products from: https://ecom-back-git-main-chaithahas-projects.vercel.app/api/items
+home:1 Access to fetch at 'https://ecom-back-git-main-chaithahas-projects.vercel.app/api/items' from origin 'https://e-com-front-chi.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+ecom-back-git-main-chaithahas-projects.vercel.app/api/items:1  Failed to load resource: net::ERR_FAILED
+HomePage.js:68 Fetch error: TypeError: Failed to fetch
+    at e (HomePage.js:47:32)
+    at t (HomePage.js:79:7)
+e @ HomePage.js:68
+admin:1 Access to fetch at 'https://ecom-back-git-main-chaithahas-projects.vercel.app/api/users' from origin 'https://e-com-front-chi.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+ecom-back-git-main-chaithahas-projects.vercel.app/api/users:1  Failed to load resource: net::ERR_FAILED
+AdminDashboard.js:50 Failed to fetch users: Failed to fetch
+(anonymous) @ AdminDashboard.js:50
+admin:1 Access to fetch at 'https://ecom-back-git-main-chaithahas-projects.vercel.app/api/items?status=pending' from origin 'https://e-com-front-chi.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+ecom-back-git-main-chaithahas-projects.vercel.app/api/items?status=pending:1  Failed to load resource: net::ERR_FAILED
+AdminDashboard.js:62 Failed to fetch user items: Failed to fetch
+(anonymous) @ AdminDashboard.js:62
+admin:1 Access to fetch at 'https://ecom-back-git-main-chaithahas-projects.vercel.app/api/items' from origin 'https://e-com-front-chi.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+ecom-back-git-main-chaithahas-projects.vercel.app/api/items:1  Failed to load resource: net::ERR_FAILED
+AdminDashboard.js:70 Failed to fetch all posts: Failed to fetch
+(anonymous) @ AdminDashboard.js:70
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:143 Sending post data to server: Object
+create-post:1 Access to fetch at 'https://ecom-back-git-main-chaithahas-projects.vercel.app/api/items' from origin 'https://e-com-front-chi.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+ecom-back-git-main-chaithahas-projects.vercel.app/api/items:1  Failed to load resource: net::ERR_FAILED
+CreatePost.js:145 Server response: Object
+CreatePost.js:188 Post creation failed: Failed to fetch
+onSubmit @ CreatePost.js:188
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:15 CreatePost - Auth state: Object
+CreatePost.js:143 Sending post data to server: Object
+create-post:1 Access to fetch at 'https://ecom-back-git-main-chaithahas-projects.vercel.app/api/items' from origin 'https://e-com-front-chi.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+ecom-back-git-main-chaithahas-projects.vercel.app/api/items:1  Failed to load resource: net::ERR_FAILED
+CreatePost.js:145 Server response: Object
+CreatePost.js:188 Post creation failed: Failed to fetch
+onSubmit @ CreatePost.js:188
+CreatePost.js:15 CreatePost - Auth state: Object
 
 
-(index):1  GET https://ecom-back-virid.vercel.app/ 404 (Not Found)
+
+
