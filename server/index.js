@@ -25,9 +25,18 @@ app.get('/test', (req, res) => {
 });
 
 // Ensure uploads directory exists
-const uploadsDir = path.join(__dirname, 'uploads');
-if (!fs.existsSync(uploadsDir)) {
+// Use /tmp for serverless environments (Vercel), otherwise use project directory
+const uploadsDir = process.env.VERCEL 
+  ? path.join('/tmp', 'uploads')
+  : path.join(__dirname, 'uploads');
+
+// Create directory if it doesn't exist (only if we have write permissions)
+try {
+  if (!fs.existsSync(uploadsDir)) {
     fs.mkdirSync(uploadsDir, { recursive: true });
+  }
+} catch (error) {
+  console.warn('Could not create uploads directory:', error.message);
 }
 
 // Configure multer for test uploads
@@ -66,7 +75,7 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      connectSrc: ["'self'", "http://localhost:3000", '${import.meta.env.REACT_APP_API_URL}'],
+      connectSrc: ["'self'", "http://localhost:3000", "https:"],
       imgSrc: ["'self'", "data:", "https:"],
       scriptSrc: ["'self'", "'unsafe-eval'"],
       styleSrc: ["'self'", "'unsafe-inline'"]
@@ -225,23 +234,28 @@ app.get('/api/verify-supabase', async (req, res) => {
   }
 });
 
-// 404 handler
+// Error handling middleware (must be before 404 handler)
+app.use((err, req, res, next) => {
+  console.error('Error:', err);
+  console.error('Stack:', err.stack);
+  res.status(err.status || 500).json({ 
+    error: err.message || 'Something went wrong!',
+    ...(process.env.NODE_ENV === 'development' && { stack: err.stack })
+  });
+});
+
+// 404 handler (must be last, after all routes)
 app.use((req, res) => {
   res.status(404).json({ error: 'Route not found' });
 });
 
-// Test endpoint for basic functionality
-app.get('/test', (req, res) => {
-  console.log('Test endpoint hit');
-  res.json({ success: true, message: 'Test endpoint working' });
-});
-
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).json({ error: 'Something went wrong!' });
-});
-
-app.listen(port, () => {
+// Export for Vercel serverless functions
+// If running locally, start the server
+if (require.main === module) {
+  app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
-});
+  });
+}
+
+// Export the app for Vercel
+module.exports = app;
