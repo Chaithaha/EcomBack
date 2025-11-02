@@ -54,8 +54,8 @@ const createItem = async (req, res) => {
                 category,
                 user_id: userId,
                 // status: itemStatus, // Column does not exist
-                battery_health: battery_health ? parseInt(battery_health) : null,
-                market_value: market_value ? parseFloat(market_value) : null,
+                // battery_health: battery_health ? parseInt(battery_health) : null, // Column does not exist
+                // market_value: market_value ? parseFloat(market_value) : null, // Column does not exist
                 created_at: new Date().toISOString()
             })
             .select()

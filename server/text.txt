@@ -1,6 +1,9 @@
-AuthContext.js:28 User signed in: admin@example.com
-HomePage.js:45 Fetching products from: https://ecom-back-virid.vercel.app/api/items
-AuthContext.js:54 Initial session found for user: admin@example.com
-HomePage.js:54 Response status: 200
-HomePage.js:55 Response ok: true
-HomePage.js:64 Fetched products: 0
+id - uuid 
+title - text
+description - text
+price - text
+category - text 
+user_id - uuid 
+image_url - text
+created_at - timestampz
+updated_at - timestampz
