@@ -1,0 +1,9 @@
+id - uuid 
+title - text
+description - text
+price - text
+category - text 
+user_id - uuid 
+image_url - text
+created_at - timestampz
+updated_at - timestampz
