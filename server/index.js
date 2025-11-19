@@ -80,7 +80,7 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      connectSrc: ["'self'", "https://e-com-front-chi.vercel.app", "https:"],
+      connectSrc: ["'self'", "https://e-com-front-chi.vercel.app", "https://aageyka.vercel.app", "https:"],
       imgSrc: ["'self'", "data:", "https:"],
       scriptSrc: ["'self'", "'unsafe-eval'"],
       styleSrc: ["'self'", "'unsafe-inline'"]
@@ -93,6 +93,7 @@ const corsOptions = {
     const allowedOrigins = [
       'http://localhost:3000',
       'https://e-com-front-chi.vercel.app',
+      'https://aageyka.vercel.app',
       process.env.CLIENT_URL
     ].filter(Boolean);
 
